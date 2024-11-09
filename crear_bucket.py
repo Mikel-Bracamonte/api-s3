@@ -8,7 +8,6 @@ def lambda_handler(event, context):
     s3 = boto3.client('s3')
     
     response = s3.create_bucket(
-        ACL='public-read',
         Bucket=nombre_bucket
     )
 
