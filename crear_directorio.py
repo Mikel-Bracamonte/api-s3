@@ -17,5 +17,5 @@ def lambda_handler(event, context):
     return {
         'statusCode': 200,
         'bucket': nombre_bucket,
-        'location': response
+        'response': response
     }
